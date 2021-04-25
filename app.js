@@ -29,8 +29,11 @@ const app = Vue.createApp({
       this.showBooks = !this.showBooks;
     },
     toggleFav(book) {
-      const selectedBook = this.books.find((item) => item.title === book);
-      selectedBook.isFav = !selectedBook.isFav;
+      // My Solution
+      // const selectedBook = this.books.find((item) => item.title === book);
+      // selectedBook.isFav = !selectedBook.isFav;
+      // Instructor solution
+      book.isFav = !book.isFav;
     },
   },
 });
